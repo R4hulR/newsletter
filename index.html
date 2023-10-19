@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  </style>
+</head>
+<body>
+  <div class="container">
+  <div class="left">
+    <header>
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul>
+        <div class="list-item">
+          <img src="/assets/images/icon-list.svg" class="icon">
+          <li>Product discovery and building what matters</li>
+        </div>
+        <div class="list-item">
+          <img src="/assets/images/icon-list.svg" class="icon">
+          <li>Measuring to ensure updates are a success</li>
+        </div>
+        <div class="list-item">
+          <img src="/assets/images/icon-list.svg" class="icon">
+          <li>And much more!</li>
+        </div>
+  
+      </ul>
+    </header>
+    <main class="left-bottom">
+      <label for="email-address" id='text'>Email address<p id="error">Valid email required</p></label>
+      <input type="email" id="email-address" placeholder="Email address" pattern="abc@gmail.com">
+      <button type="submit" id="sub-button"  >Subscribe to monthly newsletter</button>
+    </main>
+  </div>
+  <div class="right">
+    <img src="assets/images/illustration-sign-up-desktop.svg" alt="img">
+  </div>
+  </div>
+
+
+
+
+
+  <div class="mcontainer">
+    <div class="mimg">
+      <img src="./assets/images/illustration-sign-up-mobile.svg">
+    </div>
+    <div class="bottom">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <div class="list-item">
+        <img src="/assets/images/icon-list.svg" class="icon">
+        <li>Product discovery and building what matters</li>
+      </div>
+      <div class="list-item">
+        <img src="/assets/images/icon-list.svg" class="icon">
+        <li>Measuring to ensure updates are a success</li>
+      </div>
+      <div class="list-item">
+        <img src="/assets/images/icon-list.svg" class="icon">
+        <li>And much more!</li>
+      </div>
+      <main class="left-bottom">
+        <label for="email-address" id='mtext'>Email address<p id="merror">Valid email required</p></label>
+        <input type="email" id="memail-address" placeholder="Email address">
+        <button type="submit" id="msub-button" >Subscribe to monthly newsletter</button>
+      </main>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="submit-response">
+    <img src="./assets/images/icon-success.svg" class="tick">
+    <h1 class="thanks">Thanks For Subscribing!</h1>
+    <p >A confirmation has been
+      sent to </p><div id="email">rahul@gmail.com</div>.<p id="inline">Please open it and click the button
+      to confirm your subscription.
+    </p>
+    <button type="button" id="dismiss-button">Dismiss Message</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

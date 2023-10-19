@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(/assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'Robot-Regular';
+    src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(234, 29%, 20%);
+}
+.container{
+    display: flex;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 4%;
+
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 4rem 2rem 0 2rem;
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color:hsl(235, 18%, 26%);
+    
+}
+header h1{
+    font-family: 'Roboto-Bold';
+    color:hsl(234, 29%, 20%) ;
+    font-weight: 700;
+    font-size: 3rem;
+}
+header p{
+    font-family: 'Robot-Regular';
+}
+ul{
+    list-style-type: none;
+    font-family: 'Robot-Regular';
+    font-weight: 400;
+}
+.icon{
+    text-align: center;
+}
+.list-item{
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+.left-bottom{
+    display: flex;
+    flex-direction: column;
+    font-family:'Robot-Regular';
+}
+#text{
+    margin: 10px 0;
+    font-size: 0.8rem;
+}
+#email-address{
+    padding: 12px;
+    width: 80%;
+    font-family:'Robot-Regular';
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border-color:hsl(231, 7%, 60%) ;
+    box-shadow: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#sub-button{
+    width: 80%;
+    padding: 15px;
+    text-align: center;
+    background-color: hsl(4, 100%, 67%);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-family: 'Robot-Bold';
+    font-weight: 700;
+    cursor: pointer;
+
+} 
+.mcontainer{
+    display: none;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+.bottom{
+    padding: 1rem;
+}
+#mtext{
+    margin: 10px 0;
+    font-size: 0.8rem;
+}
+#memail-address{
+padding: 12px;
+    width: 80%;
+    font-family:'Robot-Regular';
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border-color:hsl(231, 7%, 60%) ;
+    box-shadow: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#msub-button{
+    width: 80%;
+    padding: 15px;
+    text-align: center;
+    background-color: hsl(4, 100%, 67%);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-family: 'Robot-Bold';
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.submit-response{
+    display: none;
+    width: 400px;
+    border-radius: 5%;
+    background-color: white;
+    padding: 2rem;
+}
+.thanks{
+    font-family: 'Roboto-Bold';
+    color:hsl(234, 29%, 20%) ;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.submit-response p{
+    font-family: 'Robot-Regular';
+    color:  hsl(235, 18%, 26%);
+}
+
+#email{
+    display: inline;
+    font-family: 'Roboto-Bold';
+    color:hsl(234, 29%, 20%) ;
+}
+#dismiss-button{
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color:hsl(234, 29%, 20%);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-family: 'Robot-Bold';
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+#inline{
+    display: inline;
+}
+#error,#merror{
+    display: none;
+    margin-left: 35%;
+    color: red;
+    font-family: 'Roboto-Bold';
+}
+@media screen and (max-width:376px) {
+    .container{
+        display: none;
+    }
+    li{
+        list-style-type: none;
+    }
+    #memail-address{
+        width: 95%;
+    }
+    #msub-button{
+        width: 95%;
+        background-color: hsl(234, 29%, 20%);
+    }
+    h1{
+        font-family: 'Roboto-Bold';
+        color:hsl(234, 29%, 20%) ;
+        font-weight: 700;
+    }
+    p{
+        font-family: 'Robot-Regular';
+        margin: 10px 0;
+    }
+    .mcontainer{
+        display: block;
+    }
+
+    
+}
